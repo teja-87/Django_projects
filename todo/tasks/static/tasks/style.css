@@ -1,0 +1,143 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* General Layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Main container */
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    font-size: 1em;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Task List */
+.task-list {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.task-list div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.task-list span {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.task-list strike {
+    font-size: 1.1em;
+    color: #aaa;
+}
+
+.task-list a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.task-list a:hover {
+    color: #0056b3;
+}
+
+/* Update and Delete Pages */
+button {
+    padding: 8px 12px;
+    font-size: 1em;
+    color: white;
+    background-color: #ff4d4d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e43e3e;
+}
+
+/* Additional Styling for Confirm and Cancel Links */
+.cancel-link, .confirm-link {
+    font-weight: bold;
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.cancel-link:hover {
+    color: #388E3C;
+}
+
+.confirm-link {
+    color: #ff4d4d;
+}
+
+.confirm-link:hover {
+    color: #e43e3e;
+}
